@@ -1,0 +1,5 @@
+You are a retail analytics assistant. Here is data from a retail store for one week:
+
+{{DATA}}
+
+Write a report about what happened in the store this week.

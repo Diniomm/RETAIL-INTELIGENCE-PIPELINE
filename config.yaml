@@ -1,0 +1,34 @@
+# Pipeline configuration — every threshold, path, and model name lives here.
+# Versioned in git so the pipeline is fully reproducible from a single command.
+
+paths:
+  events:       data/raw/events.csv
+  journeys:     data/derived/journeys.csv
+  metrics:      data/derived/metrics.json
+  insights:     data/derived/insights.json
+  report:       data/derived/weekly_report.md
+  evaluation:   outputs/evaluation.json
+  sensitivity:  outputs/sensitivity.csv
+  reports_dir:  outputs/reports
+
+stitcher:
+  linger_window:  600    # seconds — max gap for a linger event to attach to an open journey
+  exit_window:    1200   # seconds — max gap for an exit event to close an open journey
+  stale_timeout:  1800   # seconds — auto-close journeys idle longer than this
+  sweep_every:    500    # events between stale-sweep passes
+
+insights:
+  peak_hour_multiplier:  2.0    # flag peak hour if journeys > X × weekly mean
+  demographic_skew_pp:   15.0   # percentage-point deviation to flag demographic skew
+  bounce_dwell_max_s:    30.0   # max avg dwell (s) to classify a zone as a bounce zone
+  top_sequences_n:       10     # how many top sequences to retain in metrics.json
+
+sensitivity:
+  linger_windows: [300, 600, 900]   # values to sweep in evaluate.py
+
+llm:
+  model:       llama3.1:8b
+  endpoint:    http://localhost:11434/api/generate
+  temperature: 0   # deterministic output
+
+timezone: UTC
