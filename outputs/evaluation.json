@@ -1,0 +1,57 @@
+{
+  "coverage": {
+    "total_events": 250015,
+    "events_assigned": 248948,
+    "coverage_rate": 0.9957
+  },
+  "confidence_distribution": {
+    "medium": {
+      "count": 69578,
+      "pct": 81.52
+    },
+    "high": {
+      "count": 14593,
+      "pct": 17.1
+    },
+    "low": {
+      "count": 1176,
+      "pct": 1.38
+    }
+  },
+  "close_reason_distribution": {
+    "exit": {
+      "count": 84590,
+      "pct": 99.11
+    },
+    "stale": {
+      "count": 757,
+      "pct": 0.89
+    }
+  },
+  "sensitivity": [
+    {
+      "linger_window": 300,
+      "total_journeys": 85347,
+      "completed_journeys": 84575,
+      "completion_rate": 0.991,
+      "low_confidence_pct": 5.15,
+      "delta_journeys_vs_base": 0
+    },
+    {
+      "linger_window": 600,
+      "total_journeys": 85347,
+      "completed_journeys": 84590,
+      "completion_rate": 0.9911,
+      "low_confidence_pct": 1.38,
+      "delta_journeys_vs_base": 0
+    },
+    {
+      "linger_window": 900,
+      "total_journeys": 85347,
+      "completed_journeys": 84608,
+      "completion_rate": 0.9913,
+      "low_confidence_pct": 0.61,
+      "delta_journeys_vs_base": 0
+    }
+  ]
+}

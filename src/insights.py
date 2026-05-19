@@ -163,7 +163,16 @@ def detect_insights(metrics: dict, cfg: dict) -> list[dict]:
 
 
 if __name__ == "__main__":
+    import argparse
+    parser = argparse.ArgumentParser(description="Detect rule-based insights from metrics.")
+    parser.add_argument("--input", default=None, help="Path to metrics JSON (overrides config)")
+    parser.add_argument("--output", default=None, help="Path for insights JSON (overrides config)")
+    args = parser.parse_args()
     cfg = load_config()
+    if args.input:
+        cfg["paths"]["metrics"] = args.input
+    if args.output:
+        cfg["paths"]["insights"] = args.output
     metrics = load_json(cfg["paths"]["metrics"])
     insights = detect_insights(metrics, cfg)
     save_json(insights, cfg["paths"]["insights"])

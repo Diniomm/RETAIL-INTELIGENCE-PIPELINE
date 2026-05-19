@@ -124,7 +124,16 @@ def compute_metrics(cfg: dict) -> dict:
 
 
 if __name__ == "__main__":
+    import argparse
+    parser = argparse.ArgumentParser(description="Compute analytics metrics from journeys.")
+    parser.add_argument("--input", default=None, help="Path to journeys CSV (overrides config)")
+    parser.add_argument("--output", default=None, help="Path for metrics JSON (overrides config)")
+    args = parser.parse_args()
     cfg = load_config()
+    if args.input:
+        cfg["paths"]["journeys"] = args.input
+    if args.output:
+        cfg["paths"]["metrics"] = args.output
     metrics = compute_metrics(cfg)
     save_json(metrics, cfg["paths"]["metrics"])
     log.info("Wrote metrics to %s.", cfg["paths"]["metrics"])

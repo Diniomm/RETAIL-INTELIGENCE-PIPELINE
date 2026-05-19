@@ -1,0 +1,4 @@
+linger_window,total_journeys,completed_journeys,completion_rate,low_confidence_pct,delta_journeys_vs_base
+300,85347,84575,0.991,5.15,0
+600,85347,84590,0.9911,1.38,0
+900,85347,84608,0.9913,0.61,0

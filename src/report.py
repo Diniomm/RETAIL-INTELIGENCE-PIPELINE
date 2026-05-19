@@ -51,9 +51,13 @@ def run_report(cfg: dict, variant: str = "grounded", out: str | None = None) -> 
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(description="Generate LLM narrative report.")
     parser.add_argument("--prompt", default="grounded", choices=["naive", "structured", "grounded"])
-    parser.add_argument("--out", default=None, help="Override output path")
+    parser.add_argument("--input", default=None, help="Path to insights JSON (overrides config)")
+    parser.add_argument("--output", "--out", dest="output", default=None,
+                        help="Path for report markdown (overrides config)")
     args = parser.parse_args()
     cfg = load_config()
-    run_report(cfg, variant=args.prompt, out=args.out)
+    if args.input:
+        cfg["paths"]["insights"] = args.input
+    run_report(cfg, variant=args.prompt, out=args.output)

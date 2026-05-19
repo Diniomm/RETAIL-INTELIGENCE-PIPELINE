@@ -244,6 +244,15 @@ def save_journeys(journeys: list[Journey], path: str) -> None:
 
 
 if __name__ == "__main__":
+    import argparse
+    parser = argparse.ArgumentParser(description="Stitch raw events into journeys.")
+    parser.add_argument("--input", default=None, help="Path to events CSV (overrides config)")
+    parser.add_argument("--output", default=None, help="Path for journeys CSV (overrides config)")
+    args = parser.parse_args()
     cfg = load_config()
+    if args.input:
+        cfg["paths"]["events"] = args.input
+    if args.output:
+        cfg["paths"]["journeys"] = args.output
     journeys = stitch(cfg)
     save_journeys(journeys, cfg["paths"]["journeys"])

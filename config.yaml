@@ -23,6 +23,12 @@ insights:
   bounce_dwell_max_s:    30.0   # max avg dwell (s) to classify a zone as a bounce zone
   top_sequences_n:       10     # how many top sequences to retain in metrics.json
 
+evaluate:
+  zone_entry:    null   # Z_E  — set to a zone_id string, or null to infer from data
+  zone_checkout: null   # Z_CK — set to a zone_id string, or null to infer from data
+  anomaly_min_events: 2   # journeys with fewer events flagged as anomalous
+  anomaly_gap_ratio:  0.9 # flag if max_gap_s >= stale_timeout * this ratio
+
 sensitivity:
   linger_windows: [300, 600, 900]   # values to sweep in evaluate.py
 

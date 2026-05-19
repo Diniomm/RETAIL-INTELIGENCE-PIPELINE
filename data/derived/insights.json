@@ -1,0 +1,73 @@
+[
+  {
+    "id": "I002",
+    "type": "quiet_hour",
+    "headline": "Hour 21:00 is the quietest hour (928 journeys)",
+    "evidence": {
+      "hour": 21,
+      "journeys": 928
+    },
+    "metric_refs": [
+      "by_hour[21].journey_count"
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "I003",
+    "type": "hot_zone",
+    "headline": "Zone Z_C2 has the most entries (17976, 21.06% of total)",
+    "evidence": {
+      "zone_id": "Z_C2",
+      "journeys": 17976,
+      "share_pct": 21.06
+    },
+    "metric_refs": [
+      "by_zone[Z_C2].entries",
+      "by_zone[Z_C2].share_pct"
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "I004",
+    "type": "sticky_zone",
+    "headline": "Zone Z_S2 has the highest avg dwell (199s vs network avg 152s)",
+    "evidence": {
+      "zone_id": "Z_S2",
+      "avg_dwell_s": 198.9,
+      "weekly_avg": 152.0
+    },
+    "metric_refs": [
+      "by_zone[Z_S2].avg_dwell_s"
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "I005",
+    "type": "bounce_zone",
+    "headline": "Zone Z_C2 has high traffic (17976 entries) but very low dwell (25s) \u2014 possible layout or signage issue",
+    "evidence": {
+      "zone_id": "Z_C2",
+      "journeys": 17976,
+      "avg_dwell_s": 24.6
+    },
+    "metric_refs": [
+      "by_zone[Z_C2].entries",
+      "by_zone[Z_C2].avg_dwell_s"
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "I007",
+    "type": "common_path",
+    "headline": "Most common journey path is 'Z_C2' (8795 occurrences)",
+    "evidence": {
+      "sequence": "Z_C2",
+      "count": 8795
+    },
+    "metric_refs": [
+      "top_sequences[0].sequence",
+      "top_sequences[0].count"
+    ],
+    "confidence": "high"
+  }
+]

@@ -1,0 +1,367 @@
+{
+  "period": {
+    "start": "2025-03-10",
+    "end": "2025-03-16",
+    "days": 7
+  },
+  "volume": {
+    "total_events": 250015,
+    "total_journeys": 85347,
+    "completed_journeys": 84590,
+    "completion_rate": 0.9911
+  },
+  "by_day": [
+    {
+      "date": "2025-03-10",
+      "journeys": 11229,
+      "avg_duration_s": 55.0,
+      "peak_hour": 17
+    },
+    {
+      "date": "2025-03-11",
+      "journeys": 9559,
+      "avg_duration_s": 57.8,
+      "peak_hour": 12
+    },
+    {
+      "date": "2025-03-12",
+      "journeys": 12028,
+      "avg_duration_s": 55.7,
+      "peak_hour": 17
+    },
+    {
+      "date": "2025-03-13",
+      "journeys": 12388,
+      "avg_duration_s": 54.2,
+      "peak_hour": 17
+    },
+    {
+      "date": "2025-03-14",
+      "journeys": 11361,
+      "avg_duration_s": 57.7,
+      "peak_hour": 12
+    },
+    {
+      "date": "2025-03-15",
+      "journeys": 15118,
+      "avg_duration_s": 55.0,
+      "peak_hour": 18
+    },
+    {
+      "date": "2025-03-16",
+      "journeys": 13664,
+      "avg_duration_s": 59.0,
+      "peak_hour": 14
+    }
+  ],
+  "by_hour": [
+    {
+      "hour": 9,
+      "journey_count": 2806
+    },
+    {
+      "hour": 10,
+      "journey_count": 5243
+    },
+    {
+      "hour": 11,
+      "journey_count": 7841
+    },
+    {
+      "hour": 12,
+      "journey_count": 9062
+    },
+    {
+      "hour": 13,
+      "journey_count": 8897
+    },
+    {
+      "hour": 14,
+      "journey_count": 7010
+    },
+    {
+      "hour": 15,
+      "journey_count": 6112
+    },
+    {
+      "hour": 16,
+      "journey_count": 6876
+    },
+    {
+      "hour": 17,
+      "journey_count": 9337
+    },
+    {
+      "hour": 18,
+      "journey_count": 8645
+    },
+    {
+      "hour": 19,
+      "journey_count": 7945
+    },
+    {
+      "hour": 20,
+      "journey_count": 4645
+    },
+    {
+      "hour": 21,
+      "journey_count": 928
+    }
+  ],
+  "by_zone": [
+    {
+      "zone_id": "Z_C1",
+      "entries": 15209,
+      "avg_dwell_s": 24.6,
+      "share_pct": 17.82
+    },
+    {
+      "zone_id": "Z_C2",
+      "entries": 17976,
+      "avg_dwell_s": 24.6,
+      "share_pct": 21.06
+    },
+    {
+      "zone_id": "Z_C3",
+      "entries": 9686,
+      "avg_dwell_s": 24.7,
+      "share_pct": 11.35
+    },
+    {
+      "zone_id": "Z_CK",
+      "entries": 4261,
+      "avg_dwell_s": 188.8,
+      "share_pct": 4.99
+    },
+    {
+      "zone_id": "Z_E1",
+      "entries": 5429,
+      "avg_dwell_s": 16.4,
+      "share_pct": 6.36
+    },
+    {
+      "zone_id": "Z_E2",
+      "entries": 5283,
+      "avg_dwell_s": 16.3,
+      "share_pct": 6.19
+    },
+    {
+      "zone_id": "Z_N1",
+      "entries": 1790,
+      "avg_dwell_s": 190.1,
+      "share_pct": 2.1
+    },
+    {
+      "zone_id": "Z_N10",
+      "entries": 2518,
+      "avg_dwell_s": 193.3,
+      "share_pct": 2.95
+    },
+    {
+      "zone_id": "Z_N2",
+      "entries": 1694,
+      "avg_dwell_s": 193.0,
+      "share_pct": 1.98
+    },
+    {
+      "zone_id": "Z_N3",
+      "entries": 1868,
+      "avg_dwell_s": 191.2,
+      "share_pct": 2.19
+    },
+    {
+      "zone_id": "Z_N4",
+      "entries": 1558,
+      "avg_dwell_s": 192.3,
+      "share_pct": 1.83
+    },
+    {
+      "zone_id": "Z_N5",
+      "entries": 2550,
+      "avg_dwell_s": 192.4,
+      "share_pct": 2.99
+    },
+    {
+      "zone_id": "Z_N6",
+      "entries": 1999,
+      "avg_dwell_s": 192.0,
+      "share_pct": 2.34
+    },
+    {
+      "zone_id": "Z_N7",
+      "entries": 1729,
+      "avg_dwell_s": 192.4,
+      "share_pct": 2.03
+    },
+    {
+      "zone_id": "Z_N8",
+      "entries": 2231,
+      "avg_dwell_s": 189.7,
+      "share_pct": 2.61
+    },
+    {
+      "zone_id": "Z_N9",
+      "entries": 2130,
+      "avg_dwell_s": 195.2,
+      "share_pct": 2.5
+    },
+    {
+      "zone_id": "Z_S1",
+      "entries": 1085,
+      "avg_dwell_s": 193.2,
+      "share_pct": 1.27
+    },
+    {
+      "zone_id": "Z_S2",
+      "entries": 591,
+      "avg_dwell_s": 198.9,
+      "share_pct": 0.69
+    },
+    {
+      "zone_id": "Z_S3",
+      "entries": 1471,
+      "avg_dwell_s": 195.0,
+      "share_pct": 1.72
+    },
+    {
+      "zone_id": "Z_S4",
+      "entries": 1095,
+      "avg_dwell_s": 196.7,
+      "share_pct": 1.28
+    },
+    {
+      "zone_id": "Z_S5",
+      "entries": 1560,
+      "avg_dwell_s": 107.9,
+      "share_pct": 1.83
+    },
+    {
+      "zone_id": "Z_S6",
+      "entries": 886,
+      "avg_dwell_s": 195.0,
+      "share_pct": 1.04
+    },
+    {
+      "zone_id": "Z_S7",
+      "entries": 748,
+      "avg_dwell_s": 192.1,
+      "share_pct": 0.88
+    }
+  ],
+  "by_demographic": [
+    {
+      "gender": "F",
+      "age_range": "adult",
+      "journeys": 13313,
+      "avg_duration_s": 48.2
+    },
+    {
+      "gender": "F",
+      "age_range": "child",
+      "journeys": 2357,
+      "avg_duration_s": 59.2
+    },
+    {
+      "gender": "F",
+      "age_range": "middle_aged",
+      "journeys": 10830,
+      "avg_duration_s": 55.2
+    },
+    {
+      "gender": "F",
+      "age_range": "senior",
+      "journeys": 4375,
+      "avg_duration_s": 72.3
+    },
+    {
+      "gender": "F",
+      "age_range": "teenager",
+      "journeys": 3096,
+      "avg_duration_s": 71.6
+    },
+    {
+      "gender": "F",
+      "age_range": "young_adult",
+      "journeys": 7697,
+      "avg_duration_s": 58.4
+    },
+    {
+      "gender": "M",
+      "age_range": "adult",
+      "journeys": 13257,
+      "avg_duration_s": 50.2
+    },
+    {
+      "gender": "M",
+      "age_range": "child",
+      "journeys": 2510,
+      "avg_duration_s": 56.4
+    },
+    {
+      "gender": "M",
+      "age_range": "middle_aged",
+      "journeys": 12313,
+      "avg_duration_s": 50.4
+    },
+    {
+      "gender": "M",
+      "age_range": "senior",
+      "journeys": 4102,
+      "avg_duration_s": 73.7
+    },
+    {
+      "gender": "M",
+      "age_range": "teenager",
+      "journeys": 3230,
+      "avg_duration_s": 69.0
+    },
+    {
+      "gender": "M",
+      "age_range": "young_adult",
+      "journeys": 8267,
+      "avg_duration_s": 58.5
+    }
+  ],
+  "top_sequences": [
+    {
+      "sequence": "Z_C2",
+      "count": 8795
+    },
+    {
+      "sequence": "Z_C1",
+      "count": 7252
+    },
+    {
+      "sequence": "Z_C3",
+      "count": 4285
+    },
+    {
+      "sequence": "Z_E1",
+      "count": 2796
+    },
+    {
+      "sequence": "Z_E2",
+      "count": 2691
+    },
+    {
+      "sequence": "Z_C2>Z_C1",
+      "count": 1701
+    },
+    {
+      "sequence": "Z_C1>Z_C2",
+      "count": 1660
+    },
+    {
+      "sequence": "Z_C2>Z_C3",
+      "count": 1119
+    },
+    {
+      "sequence": "Z_C3>Z_C2",
+      "count": 1000
+    },
+    {
+      "sequence": "Z_CK",
+      "count": 997
+    }
+  ]
+}
