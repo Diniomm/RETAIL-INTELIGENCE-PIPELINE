@@ -33,8 +33,9 @@ sensitivity:
   linger_windows: [300, 600, 900]   # values to sweep in evaluate.py
 
 llm:
-  model:       llama3.1:8b
-  endpoint:    http://localhost:11434/api/generate
-  temperature: 0   # deterministic output
+  model:          llama3.1:8b
+  endpoint:       http://localhost:11434/api/generate
+  temperature:    0   # deterministic output
+  prompt_version: naive
 
 timezone: UTC

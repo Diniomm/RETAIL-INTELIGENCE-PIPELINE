@@ -1,31 +1,42 @@
 {
-  "coverage": {
-    "total_events": 250015,
-    "events_assigned": 248948,
-    "coverage_rate": 0.9957
-  },
-  "confidence_distribution": {
-    "medium": {
-      "count": 69578,
-      "pct": 81.52
+  "metrics": {
+    "consistencia": {
+      "consistent_journeys": 85347,
+      "total_journeys": 85347,
+      "pct": 100.0
     },
-    "high": {
-      "count": 14593,
-      "pct": 17.1
+    "cobertura": {
+      "total_events": 250015,
+      "events_assigned": 248948,
+      "pct": 99.57
     },
-    "low": {
-      "count": 1176,
-      "pct": 1.38
-    }
-  },
-  "close_reason_distribution": {
-    "exit": {
-      "count": 84590,
-      "pct": 99.11
+    "completude": {
+      "complete_journeys": 9470,
+      "total_journeys": 85347,
+      "pct": 11.1,
+      "zone_entry": "Z_C2",
+      "zone_checkout": "Z_C2"
     },
-    "stale": {
-      "count": 757,
-      "pct": 0.89
+    "detecao_anomalias": {
+      "anomalous_journeys": 2812,
+      "total_journeys": 85347,
+      "pct": 3.29,
+      "rules_applied": [
+        "stitch_confidence == 'low'",
+        "duration_s_total <= 0",
+        "max_gap_s >= 1620s (90% of stale_timeout)",
+        "num_events < 2"
+      ]
+    },
+    "precisao_numerica": {
+      "verified_numbers": 42,
+      "total_numbers": 43,
+      "pct": 97.67
+    },
+    "ausencia_alucinacao": {
+      "verified_claims": 11,
+      "total_claims": 11,
+      "pct": 100.0
     }
   },
   "sensitivity": [

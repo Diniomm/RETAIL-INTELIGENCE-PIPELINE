@@ -167,12 +167,20 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Detect rule-based insights from metrics.")
     parser.add_argument("--input", default=None, help="Path to metrics JSON (overrides config)")
     parser.add_argument("--output", default=None, help="Path for insights JSON (overrides config)")
+    parser.add_argument(
+        "--prompt",
+        default=None,
+        choices=["naive", "structured"],
+        help="Prompt version to use (overrides llm.prompt_version in config)",
+    )
     args = parser.parse_args()
     cfg = load_config()
     if args.input:
         cfg["paths"]["metrics"] = args.input
     if args.output:
         cfg["paths"]["insights"] = args.output
+    if args.prompt:
+        cfg["llm"]["prompt_version"] = args.prompt
     metrics = load_json(cfg["paths"]["metrics"])
     insights = detect_insights(metrics, cfg)
     save_json(insights, cfg["paths"]["insights"])
